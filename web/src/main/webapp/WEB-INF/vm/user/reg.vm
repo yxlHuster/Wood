@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="icon" href="/favicon.ico"
+          mce_href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico"
+          mce_href="/favicon.ico" type="image/x-icon">
+
+
+
+    <script>
+        if(window.attachEvent){
+            window.console={
+                log:function(){
+
+                }
+            }
+        }
+
+        window.basePath = "/";
+
+
+    </script>
+
+
+    <link href="http://www.isuwang.com:80/public/resource/fs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/uc.css" rel="stylesheet">
+    <link href="/css/uc-slider-player.css" rel="stylesheet">
+
+
+
+
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/jquery/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/jquery/jquery-form.js"></script>
+
+
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/layer/layer.min.js"></script>
+
+
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/uc/uc-resource-pack.js" ></script>
+
+
+    <script type="text/javascript" src="http://www.isuwang.com:80/management/members/assets/js/vw-resource-pack.js" ></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+    <title>快塑网-找塑料一网打尽</title>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link href="http://www.isuwang.com:80/public/passport/assets/css/register.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/passport/assets/js/login.js"></script>
+    <script type="text/javascript" src="http://www.isuwang.com:80/public/passport/assets/js/register.js"></script>
+</head>
+<body onload="init()" style="font-family: '微软雅黑', 'Microsoft Yahei', sans-serif">
+
+<div class="header fake-body clearfix">
+    <a class="logo" href="#">
+        <div class="kuaisu-logo inline-block"></div>
+    </a>
+
+    <span class="logo-title">企业账号注册</span>
+
+    <div class="slogan-wrap clear-fix">
+        <div class="slogan">
+            <span class="slogan1 s-icon"></span>
+
+            <p class="big">更快捷</p>
+
+            <p class="small">帮您快速找木材</p>
+        </div>
+        <div class="slogan">
+            <span class="slogan2 s-icon"></span>
+
+            <p class="big">更安全</p>
+
+            <p class="small">安全可靠一站式服务</p>
+        </div>
+        <div class="slogan">
+            <span class="slogan3 s-icon"></span>
+
+            <p class="big">更便宜</p>
+
+            <p class="small">比一比更便宜</p>
+        </div>
+    </div>
+
+</div>
+
+<input type="hidden" name="redirectURL" id="redirectURL"
+       value="#"/>
+
+<input type="hidden" id="yuandan" value=""/>
+
+<div class="fake-body register-page">
+
+
+    <div class="reg-process-wrap wrap1">
+        <span class="step1 step">注册账户</span>
+        <span class="step2 step">填写信息</span>
+        <span class="step3 step">注册成功</span>
+    </div>
+
+    <div class="reg-process-wrap wrap2">
+        <span class="step1 step">注册账户</span>
+        <span class="step2 step" style="color: #ffffff">填写信息</span>
+        <span class="step3 step">注册成功</span>
+    </div>
+
+    <div class="reg-process-wrap wrap3">
+        <span class="step1 step">注册账户</span>
+        <span class="step2 step" style="color: #ffffff">填写信息</span>
+        <span class="step3 step" style="color: #ffffff">注册成功</span>
+    </div>
+
+
+
+    <div class="form-wrap clearfix">
+        <div id="detail-wrap">
+
+            <form class="reg-form" id="fromRegister" method="post" action="http://www.isuwang.com:80/passport/register.htm">
+                <input type="hidden" id="registerType" name="registerType" VALUE="PHONE"/>
+
+                <div class="regInfo">
+                    <div class="reg-form-row clearfix phone">
+                        <label class="reg-form-label inline-block">手机号码：</label>
+                        <input class="reg-form-input" id="phone" name="phone"
+                               value=""/>
+                        <label class="tips-wrap phone"></label>
+                    </div>
+                    <div class="reg-form-row clearfix membership">
+                        <label class="reg-form-label inline-block"><span class="red-after">会员身份：</span><span
+                                class="red-star">*</span></label>
+
+                        <input type="radio" checked="checked" name="type" value="buyer" class="reg-type type-buyer"/>
+                        <span>采购商</span>
+                        <input type="radio" name="type" value="seller" class="reg-type type-seller"
+                               style="margin-left: 30px"/>
+                        <span>供应商（具备采购商功能）</span>
+
+                        <label class="tips-wrap  membership"></label>
+                    </div>
+                    <div class="reg-form-row clearfix name">
+                        <label class="reg-form-label inline-block"><span class="red-after">真实姓名：</span><span
+                                class="red-star">*</span> </label>
+                        <input class="reg-form-input" id="name" name="name"/>
+                        <label class="tips-wrap name"></label>
+                    </div>
+                    <div class="reg-form-row clearfix companyName">
+                        <label class="reg-form-label inline-block"><span class="red-after">公司名称：</span><span
+                                class="red-star">*</span></label>
+                        <input class="reg-form-input" id="companyName" name="companyName"/>
+                        <label class="tips-wrap companyName"></label>
+                    </div>
+                    <div class="reg-form-row clearfix mainProducts">
+                        <label class="reg-form-label inline-block"><span class="red-after">主营产品：</span><span
+                                class="red-star">*</span></label>
+                        <input class="reg-form-input" id="mainProducts" name="mainProducts"/>
+                        <label class="tips-wrap mainProducts"></label>
+                    </div>
+                    <div class="reg-form-row clearfix password">
+                        <label class="reg-form-label inline-block"><span class="red-after">密码：</span><span
+                                class="red-star">*</span></label>
+                        <input class="reg-form-input" id="password" name="password" type="password"/>
+                        <label class="tips-wrap password"></label>
+                    </div>
+                    <div class="reg-form-row clearfix rePassword">
+                        <label class="reg-form-label inline-block"><span class="red-after">确认密码：</span><span
+                                class="red-star">*</span></label>
+                        <input class="reg-form-input " id="rePassword" name="rePassword" type="password"/>
+                        <label class="tips-wrap rePassword"></label>
+                    </div>
+                    <div class="reg-form-row clearfix validCode">
+                        <label class="reg-form-label inline-block">短信验证码：</label>
+                        <input class="reg-form-input" id="validCode" name="validCode" style="width: 150px"/>
+                        <a class="inline-block reg-btn-getcode" href="javascript:void(0)" id="regBtnGetCode">获取短信验证码</a>
+                        <label class="tips-wrap validCode"></label>
+
+                        <p class="reg-tips" style="display: none">已发送，验证码10分钟内有效，若未收到短信，可点击重新获取验证码</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="reg-btn-wrap">
+
+                    <a class="reg-btn" href="javascript:void(0)" id="butRegister">下一步</a>
+
+                </div>
+
+
+                <div class="reg-contract">
+                    <input id="chContract" type="checkbox" checked/>
+                    <label>我已阅读并同意《<a class="blue" href="#" target="_blank">用户注册协议</a>》</label>
+                </div>
+
+            </form>
+        </div>
+
+
+
+        <div class="login-wrap">
+            <span class="header-title">已有账号?</span><br/>
+            <span class="word">
+                成为会员，可以免费上传报价单，查看行业采购需求，更可免费快速帮您找最便宜的货。
+            </span>
+
+            <div class="login-btn-wrap">
+
+
+                <a class="login-btn"
+                   href="/user/login">立刻登录</a>
+
+            </div>
+
+            <div class="header-title hot">客服热线：</div>
+            <span class="phone-icon"></span>
+             <span class="phone">
+                 400-110-110
+             </span>
+            <span class="time">(&nbsp;工作日8:00 - 17:00
+&nbsp;)</span>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div style="" class="notice-result">
+
+        <p class="word">注册成功</p>
+
+        <p class="small">我们将在 3个工作日内给您电话答复，感谢注册快塑网！</p>
+
+        <p class="n-footer">
+            <a href="#" class="go-back" style="margin-left: 60px;">返回首页</a>
+
+        </p>
+        <i class="s-icon"></i>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/footer.css">
+
+<!--页脚-->
+<div class="footer-wrap-all" style="position: relative">
+    <div><a href="#" target="_blank">关于我们</a>|
+        <a href="#" target="_blank">法律声明</a>|
+        <a href="#" target="_blank">隐私条款</a>|
+        <a href="#" target="_blank">人才招聘</a>|
+        <a href="#" target="_blank">联系我们</a>|
+    </div>
+</div>
+
+
+<style scoped="scoped">
+    .to-top-wrap {
+        width: 1190px;
+        margin: 0 auto;
+        height: 1px;
+        position: relative;
+    }
+
+    .to-top-btn {
+        position: fixed;
+        _position: absolute;
+        display: none;
+        background: url("http://www.isuwang.com:80/public/template/assets/images/to-top-btn.png") 0px 0px no-repeat;
+        width: 50px;
+        height: 50px;
+        right: 50%;
+        cursor: pointer;
+        bottom: 90px;
+        margin: 0 -660px 0 0;
+    }
+
+    .to-top-btn:hover {
+        background: url("http://www.isuwang.com:80/public/template/assets/images/to-top-btn.png") -0px -50px no-repeat;
+    }
+</style>
+</body>
+</html>

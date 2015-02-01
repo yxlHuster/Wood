@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="icon" href="/images/favicon.ico"
+          mce_href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico"
+          mce_href="/images/favicon.ico" type="image/x-icon">
+
+
+    <link href="http://www.isuwang.com:80/public/resource/fs/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/uc.css" rel="stylesheet">
+    <link href="/css/uc-slider-player.css" rel="stylesheet">
+
+    <title>快速找木材网-找木材一网打尽</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link href="/css/login.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="header fake-body clearfix">
+    <a class="logo" href="#">
+        <div class="kuaisu-logo inline-block"></div>
+    </a>
+
+
+    <div class="slogan-wrap clear-fix">
+        <div class="slogan">
+            <span class="slogan1 s-icon"></span>
+
+            <p class="big">更快捷</p>
+
+            <p class="small">帮您快速找木材</p>
+        </div>
+        <div class="slogan">
+            <span class="slogan2 s-icon"></span>
+
+            <p class="big">更安全</p>
+
+            <p class="small">安全可靠一站式服务</p>
+        </div>
+        <div class="slogan">
+            <span class="slogan3 s-icon"></span>
+
+            <p class="big">更便宜</p>
+
+            <p class="small">比一比更便宜</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="login-bg-wrap">
+    <div class="fake-body" style="position: relative;width: 1000px">
+        <a class="logo" href="#" target="_blank"
+           style="border: none;position: absolute;top: 80px;left: 30px">
+            <img src="/images/login-banner.png" style="border: none;zoom:.9">
+        </a>
+
+        <div class="form-wrap clearfix">
+            <div class="form-inner-wrap">
+                <form class="form" action="#" id="fromLogin" name="fromLogin"
+                      method="post">
+
+                    <input type="hidden" name="redirectURL" id="redirectURL"
+                           value="#"/>
+
+                    <div class="inner-header">
+
+                        <span class="right">
+                            还没有账号？
+
+                        <a class="reg-link inline-block"
+                           href="/user/reg">30秒注册</a>
+                        </span>
+                        <span class="big">登录网站</span>
+                    </div>
+                    <input type="text" id="account" name="j_username" class="text " placeholder="请输入手机号/邮箱"
+                           value=""/>
+                    <i class="passport"></i>
+
+
+                    <input type="password" id="password" name="j_password" class="text" placeholder="请输入密码"
+                           value=""/>
+
+
+                    <div class="regs-wrap">
+                        <div class="links-wrap">
+                            <a class="forgot-password inline-block"
+                               href="#">忘记密码?</a>
+
+
+                        </div>
+
+                    </div>
+                    <a type="button" id="butLogin" class="btn-login" value="登录"  href="javascript:void(0)" onclick="formSubmit()"/>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                    <i class="password"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/footer.css">
+
+<!--页脚-->
+<div class="footer-wrap-all" style="position: relative">
+    <div><a href="#" target="_blank">关于我们</a>|
+        <a href="#" target="_blank">法律声明</a>|
+        <a href="#" target="_blank">隐私条款</a>|
+        <a href="#" target="_blank">人才招聘</a>|
+        <a href="#" target="_blank">联系我们</a>|
+        <a href="#" target="_blank">网站统计</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body {
+    font-family: "Microsoft YaHei","宋体","arial";
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333
+}
+
+ul,li,p,dl,dt,dd,button,input,h1,h2,h3 {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0
+}
+
+header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcaption {
+    display: block
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+a:hover {
+    color: #387ee6
+}
+
+input::-webkit-input-placeholder {
+    color: #999
+}
+
+input::-moz-placeholder {
+    color: #999
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clearfix:after {
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right
+}
+
+.font14 {
+    font-size: 14px
+}
+
+.pr {
+    position: relative
+}
+
+.pa {
+    position: absolute
+}
+
+.mt5 {
+    margin-top: 5px
+}
+
+.mt15 {
+    margin-top: 15px
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.mr15 {
+    margin-right: 15px
+}
+
+.mr5 {
+    margin-right: 5px
+}
+
+.ml30 {
+    margin-left: 30px
+}
+
+.ellipsis {
+    display: list-item;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.h3 {
+    font-size: 16px
+}
+
+.hidden {
+    display: none
+}

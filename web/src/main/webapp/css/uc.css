@@ -1,0 +1,206 @@
+body {
+    font-family: '微软雅黑','Microsoft Yahei';
+    color: #000!important;
+    font-size: 12px
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: visible
+}
+
+button,input,select,textarea {
+    font-family: 'Microsoft Yahei'
+}
+
+.uc-icon {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    margin: 3px
+}
+
+a.uc-icon:hover {
+    background-color: red
+}
+
+.header-title {
+    text-indent: 5px;
+    font-family: 'Microsoft Yahei','黑体'!important
+}
+
+.fake-body {
+    margin: 0 auto;
+    width: 1190px
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    height: 0
+}
+
+.inline-block {
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.nowrap,.singleline {
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.hidden {
+    display: none
+}
+
+.uc-dlg-btns-wrap {
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    width: 100%
+}
+
+.disabled {
+    background: #f0f0f0
+}
+
+.bui-dialog {
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    background-clip: padding-box;
+    outline: 0;
+    position: absolute;
+    z-index: 1070
+}
+
+.bui-dialog .bui-stdmod-header {
+    padding: 15px;
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: move;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.bui-dialog .bui-stdmod-body {
+    padding: 15px
+}
+
+.bui-dialog .bui-stdmod-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    *zoom: 1
+}
+
+.bui-dialog .bui-stdmod-footer:before,.bui-dialog .bui-stdmod-footer:after {
+    content: " ";
+    display: table
+}
+
+.bui-dialog .bui-stdmod-footer:after {
+    clear: both
+}
+
+.bui-dialog .bui-stdmod-footer .button+.button {
+    margin-left: 5px;
+    margin-bottom: 0
+}
+
+.bui-dialog .bui-stdmod-footer .button-group .button+.button {
+    margin-left: -1px
+}
+
+.bui-dialog .bui-stdmod-footer .button-block+.button-block {
+    margin-left: 0
+}
+
+.bui-dialog a.bui-ext-close {
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    outline: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1
+}
+
+.bui-dialog .bui-ext-close-x {
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    border: 0
+}
+
+.bui-dialog .bui-ext-close-x:hover {
+    background-color: #fff
+}
+
+.bui-message {
+    padding: 15px 20px
+}
+
+.bui-message .bui-stdmod-header {
+    padding: 0;
+    border-bottom: 0
+}
+
+.bui-message .header-title {
+    padding-bottom: 15px
+}
+
+.bui-message .header-title:empty {
+    padding-bottom: 0
+}
+
+.bui-message .bui-stdmod-body {
+    padding: 0 30px 20px 0
+}
+
+.bui-message .bui-stdmod-body .x-icon {
+    float: left
+}
+
+.bui-message .bui-message-content {
+    margin-left: 40px;
+    line-height: 25px
+}
+
+.bui-message .bui-stdmod-footer {
+    padding: 0;
+    text-align: center;
+    border-top: 0
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30}.%method - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- third jar -->
+    <logger name="org.springframework" level="WARN" />
+    <logger name="com.iwood.web" level="INFO" />
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>

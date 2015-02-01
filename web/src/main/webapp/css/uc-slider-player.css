@@ -1,0 +1,46 @@
+.uc-slider-player-wrap {
+    overflow: hidden;
+    position: relative
+}
+
+.uc-slider-player-wrap .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible
+}
+
+.uc-slider-player-wrap .element {
+    float: left
+}
+
+.uc-slider-player-wrap .locations-wrap {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 18px;
+    line-height: 18px
+}
+
+.uc-slider-player-wrap .location {
+    font-size: 10px;
+    text-decoration: none;
+    border: 0 solid #f0f0f0;
+    color: #4d4d4d;
+    background: #fff;
+    width: 16px;
+    height: 18px;
+    margin: 0 2px;
+    line-height: 18px;
+    text-align: center
+}
+
+.uc-slider-player-wrap a.location:hover {
+    color: #fff;
+    background: #f60
+}
+
+.uc-slider-player-wrap a.location.selected {
+    color: #fff;
+    background: #f60
+}
