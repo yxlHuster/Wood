@@ -4,8 +4,8 @@
       <div class="fl clearfix">
         <div class="loginbar">
           您好！欢迎光临木料库
-          <a class="ml30 mr15" href="/login">请登录</a>
-          <a href="/reg">免费注册</a>
+          <a class="ml30 mr15" href="/user/login">请登录</a>
+          <a href="/user/reg">免费注册</a>
         </div>
       </div>
       <ul class="fr clearfix">

@@ -18,12 +18,12 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/user")
 public class UserController {
 
-    @RequestMapping("/")
+    @RequestMapping("/login")
     public String index() {
         return "/user/login";
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/ulogin")
     public String userLogin(Model model,
                             HttpServletRequest request, HttpServletResponse response,
                             @RequestParam(value = "username") String username,
