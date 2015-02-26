@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>木料库-找木料、更安全、更快捷、更便宜</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <!--<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>-->
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+  <!-- 自定义Web CSS文件 -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/purchase.css">
+</head>
+<body>
+
+## header
+#include("template/header.vm")
+
+## main container
+<div class="purchase-main">
+  <div class="purchase-main-inner clearfix">
+    <div class="purchase-left">
+      <form id="purchase-search" method="get">
+        <div class="search-panel">
+          <div class="title">
+            <div class="title1">搜索</div>
+            <div class="title2">采购报价</div>
+          </div>
+          <div class="search-input">
+            材质&nbsp;
+            <input type="text" class="text">
+            产地&nbsp;
+            <input type="text" class="text">
+            仓库&nbsp;
+            <input type="text" class="text">
+            规格&nbsp;
+            <input type="text" class="text">
+            <input type="button" class="search-btn" value="搜索">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="purchase-right"></div>
+  </div>
+</div>
+
+## footer
+#include("template/footer.vm")
+</body>
+</html>
+

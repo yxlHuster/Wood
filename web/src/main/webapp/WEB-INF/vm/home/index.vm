@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>木料库-找木料、更安全、更快捷、更便宜</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <!--<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>-->
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+  <!-- 自定义Web CSS文件 -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+
+  ## header
+  #include("template/header.vm")
+
+  ## top banner
+  <div class="clearfix">
+    <div class="container clearfix" style="position: relative;">
+      <div class="top-main" style="position: relative; z-index: 11">
+        <div class="fl top-main-l"></div>
+        <div class="fl top-main-r"></div>
+      </div>
+      <div class="blank-left" style="position: absolute; left: 0; top: -40px; z-index: 15;">
+        <div class="sub-menu-box" style="position: absolute; z-index: 12">
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">红木</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">实木</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>293</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">板材</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">木皮</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">人造板</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">家具成品</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sub-menu-item">
+            <div class="sub-sub-menu">
+              <div class="sort">
+                <h3><a href="">木料市场</a></h3>
+                <div class="number">
+                  昨日成交
+                  <b>178</b>
+                  吨
+                </div>
+                <i class="right-arrow"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  ## floor 1 红木
+  <div class="floor">
+    <div class="container floor1">
+      <div class="floor-hd">
+        <h2 class="floor-title">
+          <span style="color: #3094ed">1F</span>
+          红木
+        </h2>
+        <div class="tab fl">
+          <a href="javascript:void(0)" class="current">华北市场</a>
+          <a href="javascript:void(0)" class="">华南市场</a>
+        </div>
+      </div>
+      <div class="floor-content"></div>
+    </div>
+  </div>
+
+  ## floor 2 实木
+  <div class="floor">
+    <div class="container floor2">
+      <div class="floor-hd">
+        <h2 class="floor-title">
+          <span style="color: #f66">2F</span>
+          实木
+        </h2>
+        <div class="tab fl">
+          <a href="javascript:void(0)" class="current">华北市场</a>
+          <a href="javascript:void(0)" class="">华南市场</a>
+        </div>
+      </div>
+      <div class="floor-content"></div>
+    </div>
+  </div>
+
+  ## floort 3 板材
+  <div class="floor">
+    <div class="container floor3">
+      <div class="floor-hd">
+        <h2 class="floor-title">
+          <span style="color: #7066ab">3F</span>
+          板材
+        </h2>
+        <div class="tab fl">
+          <a href="javascript:void(0)" class="current">华北市场</a>
+          <a href="javascript:void(0)" class="">华南市场</a>
+        </div>
+      </div>
+      <div class="floor-content"></div>
+    </div>
+  </div>
+
+  ## floor 4 木皮
+  <div class="floor">
+    <div class="container floor4">
+      <div class="floor-hd">
+        <h2 class="floor-title">
+          <span style="color: #eeab16">4F</span>
+          木皮
+        </h2>
+        <div class="tab fl">
+          <a href="javascript:void(0)" class="current">华北市场</a>
+          <a href="javascript:void(0)" class="">华南市场</a>
+        </div>
+      </div>
+      <div class="floor-content"></div>
+    </div>
+  </div>
+  <div class="service-bar">
+   <div class="container clearfix" style="text-align: center;"></div>
+  </div>
+
+  ## footer
+  #include("template/footer.vm")
+</body>
+</html>
+

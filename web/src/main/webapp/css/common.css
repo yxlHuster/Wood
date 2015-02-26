@@ -1,0 +1,354 @@
+.clearfix {
+  zoom: 1;
+}
+
+.main {
+  min-height: 600px;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto 0 auto;
+}
+
+.header {
+  height: 36px;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 36px;
+  background: #fff;
+}
+
+.hd_menu {
+  float: left;
+  position: relative;
+}
+
+.hd_menu_title {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #ebebeb;
+  padding: 0 12px 0 13px;
+}
+
+.top {
+  background: #f7f7f7;
+  height: 110px;
+}
+
+.site_logo {
+  margin: 18px 68px 17px 0;
+  width: 228px;
+  height: 75px;
+}
+
+.muliaoku-logo {
+  background: url(http://www.isuwang.com/public/index/assets/img/index-icons2.png) no-repeat center;
+  width: 228px;
+  height: 75px;
+  background-size: contain;
+  display: inline-block;
+  zoom: 1;
+}
+
+.search-bar {
+  margin-top: 25px;
+}
+
+.search-item {
+  margin-bottom: 3px;
+}
+
+.search-item a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.search-item a:hover {
+  color: #f70;
+}
+
+.line_s {
+  height: 10px;
+  border-right: 1px solid #e7e7e7;
+  font-size: 0;
+  line-hegith: 0;
+  margin: 0 5px 0 5px;
+  display: inline-block;
+}
+
+.search-bar .text {
+  height: 36px;
+  border: 2px solid #e1e1e1;
+  border-right: 0;
+  padding-left: 5px;
+  width: 488px;
+  background: #fff!important;
+  font-size: 12px;
+  outline: 0;
+}
+
+.search-bar .text:focus {
+  border: 2px solid #8A0A16;
+  border-right: 0;
+}
+
+.search-bar .btn_search {
+  height: px;
+  line-height: 40px;
+  text-align: center;
+  background: #8A0A16;
+  width: 98px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-release {
+  line-height: 40px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  height: 40px;
+  background: #ff7800;
+  padding: 0 18px;
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  background: url(../images/navBG.jpg) repeat-x left bottom #f7f7f7;
+  position: relative;;
+  z-index: 13;
+}
+
+.submenu {
+  position: relative;
+  width: 190px;
+}
+
+.submenu-title {
+  line-height: 40px;
+  height: 40px;
+  background: #ff7800;
+  width: 190px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submenu-title a {
+  padding-left: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fast-link-title-icon {
+  background: url(../images/index-icons.png) no-repeat 0 -90px;
+  width: 14px;
+  height: 16px;
+  line-height: 30px;
+  margin-left: -23px;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  zoom: 1;
+}
+
+.fast-link-title b {
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.nav {
+  height: 40px;
+  background: #8A0A16;
+  color: #fff;
+  width: 1000px;
+}
+
+.nav ul li {
+  float: left;
+  line-height: 40px;
+}
+
+.nav a.selected {
+  background: #7A0A16;
+}
+
+.nav a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  height: 40px;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+
+.top-main {
+  padding-left: 190px;
+}
+
+.top-main-l {
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #eaeaea;
+  width: 699px;
+  height: 479px;
+}
+
+.top-main-r {
+  width: 299px;
+  height: 479px;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.sub-menu-box {
+  top: 40px;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  width: 188px;
+  height: 479px;
+  border-left: 1px solid #ff7800;
+  border-bottom: 1px solid #ff7800;
+  border-right: 1px solid #ff7800;
+}
+
+.sub-menu-box .sub-menu-item {
+  position: relative;
+  height: 69px;
+  width: 188px;
+}
+
+.sub-menu-box .sub-sub-menu {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ededed;
+  padding: 15px 0 16px 0;
+  cursor: pointer;
+  position: absolute;
+  width: 188px;
+}
+
+.sub-menu-box .sub-sub-menu:hover {
+  border-top: 1px solid #ff7800;
+  border-bottom: 1px solid #ff7800;
+  background: #fff;
+  width: 189px;
+}
+.sort {
+  position: relative;
+  padding-left: 36px;
+}
+
+.sub-sub-menu h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 2px;
+  height: 18px;
+}
+
+.sub-sub-menu .right-arrow {
+  width: 8px;
+  height: 12px;
+  background: url(../images/index-icons.png) 0 -113px no-repeat;
+  position: absolute;
+  right: 8px;
+  top: 11px;
+}
+
+.sort .number {
+  color: #999;
+}
+
+.number b {
+  color: #ff7800;
+  margin: 0 3px 0 3px;
+}
+
+.floor {
+  margin-top: 25px;
+}
+
+.floor .floor-hd {
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  height: 36px;
+}
+
+.floor .floor-title {
+  font-size: 18px;
+  width: 188px;
+  float: left;
+  line-height: 36px;
+}
+
+.floor .tab a {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  fong-size: 14px;
+  margin-right: 5px;
+}
+
+.floor .tab a:hover, .floor .tab a.current {
+  color: #fff;
+}
+
+.floor .floor-content {
+  height: 300px;
+  border: 1px solid #e2e2e2;
+  border-top: 0;
+}
+
+.floor1 .floor-hd {
+  border-color: #3094ed;
+}
+
+.floor1 .tab a:hover, .floor1 .tab a.current {
+  background: #3094ed;
+}
+
+.floor2 .floor-hd {
+  border-color: #f66;
+}
+
+.floor2 .tab a:hover, .floor2 .tab a.current {
+  background: #f66;
+}
+
+.floor3 .floor-hd {
+  border-color: #7066ab;
+}
+
+.floor3 .tab a:hover, .floor3 .tab a.current {
+  background: #7066ab;
+}
+
+.floor4 .floor-hd {
+  border-color: #eeab16;
+}
+
+.floor4 .tab a:hover, .floor4 .tab a.current {
+  background: #eeab16;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 5px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer div {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #666;
+  margin: 0 10px 0 10px;
+  text-decoration: none;
+}

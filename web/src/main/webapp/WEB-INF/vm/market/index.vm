@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>木料库-找木料、更安全、更快捷、更便宜</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <!--<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>-->
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+  <!-- 自定义Web CSS文件 -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/market.css">
+</head>
+<body>
+
+## header
+  #include("template/header.vm")
+
+## main container
+  <div class="main">
+    <form id="search-market" class="clearfix" style="margin-top: 10px">
+      <div class="market-container">
+        <div class="title">
+          <div class="name">木材<label>市场</label></div>
+          <span class="count" style="float: right; margin-right: 5px;">
+            共有
+            <span class="yellow">1000</span>
+            件相关商品
+          </span>
+        </div>
+        <div class="market-search-panel" style="position: relative;">
+          <div style="margin: 0 auto; padding: 0px;">
+            <div class="search-form">
+              <div class="search-form-row">
+                <div class="label">材质</div>
+                <div class="values">
+                  <ul class="value">
+                    <li><a>交趾黄檀</a></li>
+                    <li><a>大果紫檀</a></li>
+                    <li><a>刺猬紫檀</a></li>
+                    <li><a>微凹黄檀</a></li>
+                    <li><a>阔叶黄檀</a></li>
+                    <li><a>非洲崖豆木</a></li>
+                    <li><a>铁刀木 </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="search-form-row">
+                <div class="label">仓库</div>
+                <div class="values">
+                  <ul class="value">
+                    <li><a>北京</a></li>
+                    <li><a>上海</a></li>
+                    <li><a>东阳</a></li>
+                    <li><a>越南</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="search-form-row">
+                <div class="label">加工</div>
+                <div class="values">
+                  <ul class="value">
+                    <li><a>原木</a></li>
+                    <li><a>半成品</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="search-input">
+              <span class="title">材质</span>
+              <input class="content" type="text" value>
+              <span class="title">产地</span>
+              <input class="content" type="text" value>
+              <span class="title">仓库</span>
+              <input class="content" type="text" value>
+              <span class="title">规格</span>
+              <input class="content" type="text" value>
+              <span class="market-search-btn">搜索</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+## footer
+  #include("template/footer.vm")
+</body>
+</html>

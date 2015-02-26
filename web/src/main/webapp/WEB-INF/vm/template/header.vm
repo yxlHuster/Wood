@@ -1,0 +1,65 @@
+<div id="top-wrap-all">
+  <div id="head" class="header">
+    <div class="container">
+      <div class="fl clearfix">
+        <div class="loginbar">
+          您好！欢迎光临木料库
+          <a class="ml30 mr15" href="/login">请登录</a>
+          <a href="/reg">免费注册</a>
+        </div>
+      </div>
+      <ul class="fr clearfix">
+        <li class="hd_menu">
+          <a class="hd_menu_title" href="">我的木料库</a>
+        </li>
+        <li class="hd_menu">
+          <a class="hd_menu_title" href="">我的订单</a>
+        </li>
+        <li class="hd_menu">
+          <a class="hd_menu_title" href="">我是供应商</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="top top-search-main clearfix">
+    <div class="container clearfix">
+      <div class="fl site_logo">
+        <a herf="">
+          <span class="muliaoku-logo inline-block"></span>
+        </a>
+      </div>
+      <div class="fl search-bar">
+        <div class="search-item">
+          <a href="javascript:void(0)">产品</a>
+          <i class="line_s"></i>
+          <a href="javascript:void(0)">求购</a>
+        </div>
+        <div>
+          <input class="fl text heads-button" type="text" placeholder="木材/规格" id="search-input" value>
+          <span class="fl btn_search" id="search-btn">搜 索</span>
+          <span class="btn-release" id="release_request-btn">发布采购需求</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-bar" id="nav_bar">
+  <div class="container clearfix">
+    <div class="fl submenu">
+      <div class="fl submenu-title">
+        <a href="#" class="fast-link-title">
+          <span class="fast-link-title-icon inline-block"></span>
+          <b>木料大全</b>
+        </a>
+      </div>
+    </div>
+    <nav class="fl nav">
+      <ul>
+        <li><a href="/" class=""><b>首页</b></a></li>
+        <!-- <li><a href="#"><b>木料仓库</b></a></li> -->
+        <li><a href="/market"><b>木料市场</b></a></li>
+        <li><a href="/purchase"><b>采购报价区</b></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

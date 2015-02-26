@@ -1,0 +1,144 @@
+.market-container {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  color: #666;
+  font-family: '微软雅黑','Microsoft Yahei',sans-serif;
+}
+
+.market-container .title {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.market-container .title .name {
+  font-size: 16px;
+  font-weight: 700;
+  width: 80px;
+  float: left;
+}
+
+.market-container .title .name label {
+  color: #ffb200;
+}
+
+.market-container .title .yellow {
+  color: #ff7800;
+}
+
+.market-container .market-search-panel {
+  border: 2px solid #ffb200;
+  padding: 0 12px;
+  margin-top: 5px;
+}
+
+.market-container .search-form {
+  border: 0;
+  width: 100%;
+  font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','微软雅黑','宋体',sans-serif;
+}
+
+.search-form .search-form-row {
+  border: 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.search-form .search-form-row:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
+
+.market-container .search-form .label {
+  color: #444;
+  font-size: 14px;
+  float: left;
+  padding: 15px 0 0;
+  text-indent: 45px;
+  width: 10%;
+}
+
+.market-container .search-form .values {
+  background-color: #fff;
+  float: left;
+  overflow: hidden;
+  padding: 14px 0;
+  position: relative;
+  width: 90%;
+}
+
+.market-container .search-form .values .value {
+  height: auto;
+}
+
+.market-container .search-form .values ul {
+  list-style: none;
+  margin: 0 105px 0 25px;
+  position: relative;
+}
+
+.market-container .search-form .values ul li {
+  margin: 0 25px 0 0;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+}
+
+.market-container .search-form .values ul li a {
+  cursor: pointer;
+  color: #806f66;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 1px 4px 1px 4px;
+  position: relative;
+  white-space: nowrap;
+  outline: 0;
+  text-decoration: none;
+}
+
+.market-container .search-input {
+  padding: 20px 0;
+  line-height: 25px;
+  height: 30px;
+}
+
+.market-container .market-search-panel .search-input .title:first-child {
+  margin-left: 0;
+}
+
+.market-container .market-search-panel .search-input .title {
+  float: left;
+  margin: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.market-container .market-search-panel .search-input .content {
+  float: left;
+  margin-right: 55px;
+  width: 160px;
+  text-indent: 5px;
+  outline: 0;
+  border: 1px solid #e3e3e3;
+  height: 16px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 7px 0;
+}
+
+.market-container .market-search-panel .search-input .market-search-btn {
+  display: inline-block;
+  border-radius: 2px;
+  float: right;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background: #ffb200;
+}
