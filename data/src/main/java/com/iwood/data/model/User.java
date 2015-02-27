@@ -11,9 +11,11 @@ public class User {
 
 	private long userId;
 	private String phone;
-	private String nick;
+	private String realName;
+	private String company;
+	private String mainCategory;
 	private String passWord;
-	private int userType;
+	private int userType; //0采购商，1供货商
 
 	public long getUserId() {
 		return userId;
@@ -31,12 +33,28 @@ public class User {
 		this.phone = phone;
 	}
 
-	public String getNick() {
-		return nick;
+	public String getRealName() {
+		return realName;
 	}
 
-	public void setNick(String nick) {
-		this.nick = nick;
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	public String getMainCategory() {
+		return mainCategory;
+	}
+
+	public void setMainCategory(String mainCategory) {
+		this.mainCategory = mainCategory;
 	}
 
 	public String getPassWord() {

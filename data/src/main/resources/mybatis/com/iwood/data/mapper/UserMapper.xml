@@ -7,26 +7,28 @@
     <resultMap id="userResultMap" type="user">
         <result column="userId" property="userId" />
         <result column="phone" property="phone" />
-        <result column="nick" property="nick"/>
+        <result column="realName" property="realName"/>
+        <result column="company" property="company"/>
+        <result column="mainCategory" property="mainCategory"/>
         <result column="passWord" property="passWord" />
         <result column="userType" property="userType"/>
     </resultMap>
 
     <insert id="addUser" parameterType="user">
         INSERT INTO
-        wood_user(phone, nick, passWord, userType, regTime, modTime)
-        VALUES(#{phone}, #{nick}, #{passWord}, #{userType}, now(), now())
+        wood_user(phone, realName, company, mainCategory, passWord, userType, regTime, modTime)
+        VALUES(#{phone}, #{realName}, #{company}, #{mainCategory}, #{passWord}, #{userType}, now(), now())
     </insert>
 
     <select id="getUserByPhone" parameterType="Map" resultType="user">
-      SELECT userId, phone, nick, passWord, userType
+      SELECT userId, phone, realName, company, mainCategory, passWord, userType
       FROM wood_user
       WHERE phone = #{phone}
       LIMIT 1
     </select>
 
     <select id="getUserByPhoneAndPassWord" parameterType="Map" resultType="user">
-      SELECT userId, phone, nick, passWord, userType
+      SELECT userId, phone, realName, company, mainCategory, passWord, userType
       FROM wood_user
       WHERE phone = #{phone}
       AND passWord = #{passWord}
@@ -36,7 +38,9 @@
     <update id="updateUser" parameterType="user">
       UPDATE wood_user
       SET phone = #{phone},
-      nick = #{nick},
+      realName = #{realName},
+      company = #{company},
+      mainCategory = #{mainCategory},
       passWord = #{passWord},
       userType = #{userType},
       modTime = now()
