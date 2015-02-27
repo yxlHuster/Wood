@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>web</module>
+        <module>data</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -417,4 +418,36 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <property>
+                    <name>environment</name>
+                    <value>prod</value>
+                </property>
+            </activation>
+            <properties>
+                <mysql.jdbc.driverClassName>com.mysql.jdbc.Driver</mysql.jdbc.driverClassName>
+                <mysql.jdbc.url><![CDATA[jdbc:mysql://115.28.223.181:3306/wood?useUnicode=true&amp;characterEncoding=UTF-8]]></mysql.jdbc.url>
+                <mysql.jdbc.username>wood</mysql.jdbc.username>
+                <mysql.jdbc.password>woodProd</mysql.jdbc.password>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <activation>
+                <property>
+                    <name>environment</name>
+                    <value>test</value>
+                </property>
+            </activation>
+            <properties>
+                <mysql.jdbc.driverClassName>com.mysql.jdbc.Driver</mysql.jdbc.driverClassName>
+                <mysql.jdbc.url><![CDATA[jdbc:mysql://115.28.223.181:3306/wood?useUnicode=true&amp;characterEncoding=UTF-8]]></mysql.jdbc.url>
+                <mysql.jdbc.username>wood</mysql.jdbc.username>
+                <mysql.jdbc.password>woodTest</mysql.jdbc.password>
+            </properties>
+        </profile>
+    </profiles>
 </project>

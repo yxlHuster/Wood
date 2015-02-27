@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iwood.data.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="user">
+        <result column="userId" property="userId" />
+        <result column="phone" property="phone" />
+        <result column="nick" property="nick"/>
+        <result column="passWord" property="passWord" />
+        <result column="userType" property="userType"/>
+    </resultMap>
+
+    <insert id="addUser" parameterType="user">
+        INSERT INTO
+        wood_user(phone, nick, passWord, userType, regTime, modTime)
+        VALUES(#{phone}, #{nick}, #{passWord}, #{userType}, now(), now())
+    </insert>
+
+    <select id="getUserByPhone" parameterType="Map" resultType="user">
+      SELECT userId, phone, nick, passWord, userType
+      FROM wood_user
+      WHERE phone = #{phone}
+      LIMIT 1
+    </select>
+
+    <select id="getUserByPhoneAndPassWord" parameterType="Map" resultType="user">
+      SELECT userId, phone, nick, passWord, userType
+      FROM wood_user
+      WHERE phone = #{phone}
+      AND passWord = #{passWord}
+      LIMIT 1
+    </select>
+
+    <update id="updateUser" parameterType="user">
+      UPDATE wood_user
+      SET phone = #{phone},
+      nick = #{nick},
+      passWord = #{passWord},
+      userType = #{userType},
+      modTime = now()
+      WHERE userId = #{userId}
+    </update>
+
+</mapper>
