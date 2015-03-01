@@ -9,26 +9,25 @@
         <result column="phone" property="phone" />
         <result column="realName" property="realName"/>
         <result column="company" property="company"/>
-        <result column="mainCategory" property="mainCategory"/>
+        <result column="mainProducts" property="mainProducts"/>
         <result column="passWord" property="passWord" />
-        <result column="userType" property="userType"/>
     </resultMap>
 
     <insert id="addUser" parameterType="user">
         INSERT INTO
-        wood_user(phone, realName, company, mainCategory, passWord, userType, regTime, modTime)
-        VALUES(#{phone}, #{realName}, #{company}, #{mainCategory}, #{passWord}, #{userType}, now(), now())
+        wood_user(phone, realName, company, mainProducts, passWord, regTime, modTime)
+        VALUES(#{phone}, #{realName}, #{company}, #{mainProducts}, #{passWord}, now(), now())
     </insert>
 
     <select id="getUserByPhone" parameterType="Map" resultType="user">
-      SELECT userId, phone, realName, company, mainCategory, passWord, userType
+      SELECT userId, phone, realName, company, mainProducts, passWord
       FROM wood_user
       WHERE phone = #{phone}
       LIMIT 1
     </select>
 
     <select id="getUserByPhoneAndPassWord" parameterType="Map" resultType="user">
-      SELECT userId, phone, realName, company, mainCategory, passWord, userType
+      SELECT userId, phone, realName, company, mainProducts, passWord
       FROM wood_user
       WHERE phone = #{phone}
       AND passWord = #{passWord}
@@ -40,9 +39,8 @@
       SET phone = #{phone},
       realName = #{realName},
       company = #{company},
-      mainCategory = #{mainCategory},
+      mainCategory = #{mainProducts},
       passWord = #{passWord},
-      userType = #{userType},
       modTime = now()
       WHERE userId = #{userId}
     </update>

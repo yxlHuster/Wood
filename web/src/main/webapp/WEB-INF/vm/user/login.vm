@@ -6,7 +6,8 @@
     <link rel="shortcut icon" href="/favicon.ico"
           mce_href="/images/favicon.ico" type="image/x-icon">
 
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/login.js"></script>
     <link href="http://www.isuwang.com:80/public/resource/fs/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/uc.css" rel="stylesheet">
     <link href="/css/uc-slider-player.css" rel="stylesheet">
@@ -64,10 +65,10 @@
 
         <div class="form-wrap clearfix">
             <div class="form-inner-wrap">
-                <form class="form" action="#" id="fromLogin" name="fromLogin"
+                <form class="form" action="/user/ulogin" id="fromLogin" name="fromLogin"
                       method="post">
 
-                    <input type="hidden" name="redirectURL" id="redirectURL"
+                    <input type="hidden" name="ru" id="ru"
                            value="#"/>
 
                     <div class="inner-header">
@@ -80,12 +81,12 @@
                         </span>
                         <span class="big">登录网站</span>
                     </div>
-                    <input type="text" id="account" name="j_username" class="text " placeholder="请输入手机号/邮箱"
+                    <input type="text" id="phone" name="phone" class="text " placeholder="请输入手机号/邮箱"
                            value=""/>
                     <i class="passport"></i>
 
 
-                    <input type="password" id="password" name="j_password" class="text" placeholder="请输入密码"
+                    <input type="password" id="passwd" name="passwd" class="text" placeholder="请输入密码"
                            value=""/>
 
 
@@ -120,4 +121,21 @@
 </div>
 
 </body>
+<script>
+    function formSubmit() {
+		var phone = jQuery("#phone").val();
+		var password = jQuery('#passwd').val().trim();
+		var numpattern = /^\d+(\.\d+)?$/;
+		if (!numpattern.test(phone)) {
+			alert("请输入手机号!");
+			return;
+		}
+        if (password == '' || password == null || password == undefined) {
+			alert("请输入密码!");
+			return;
+		}
+        document.getElementById('fromLogin').submit();
+    }
+</script>
+
 </html>

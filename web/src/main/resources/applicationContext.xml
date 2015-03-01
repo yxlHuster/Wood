@@ -12,5 +12,6 @@
     <context:annotation-config />
 
     <!-- import resources -->
+    <import resource="classpath*:spring/applicationContext-mysql.xml"/>
 
 </beans>

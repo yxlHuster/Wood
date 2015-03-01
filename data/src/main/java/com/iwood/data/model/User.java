@@ -13,9 +13,8 @@ public class User {
 	private String phone;
 	private String realName;
 	private String company;
-	private String mainCategory;
+	private String mainProducts;
 	private String passWord;
-	private int userType; //0采购商，1供货商
 
 	public long getUserId() {
 		return userId;
@@ -49,12 +48,12 @@ public class User {
 		this.company = company;
 	}
 
-	public String getMainCategory() {
-		return mainCategory;
+	public String getMainProducts() {
+		return mainProducts;
 	}
 
-	public void setMainCategory(String mainCategory) {
-		this.mainCategory = mainCategory;
+	public void setMainProducts(String mainProducts) {
+		this.mainProducts = mainProducts;
 	}
 
 	public String getPassWord() {
@@ -65,11 +64,4 @@ public class User {
 		this.passWord = passWord;
 	}
 
-	public int getUserType() {
-		return userType;
-	}
-
-	public void setUserType(int userType) {
-		this.userType = userType;
-	}
 }

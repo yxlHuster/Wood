@@ -8,29 +8,9 @@
     <link rel="shortcut icon" href="/favicon.ico"
           mce_href="/favicon.ico" type="image/x-icon">
 
-
-
-    <script>
-        if(window.attachEvent){
-            window.console={
-                log:function(){
-
-                }
-            }
-        }
-
-        window.basePath = "/";
-
-
-    </script>
-
-
     <link href="http://www.isuwang.com:80/public/resource/fs/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/uc.css" rel="stylesheet">
     <link href="/css/uc-slider-player.css" rel="stylesheet">
-
-
-
 
     <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/jquery/jquery-1.8.1.js"></script>
     <script type="text/javascript" src="http://www.isuwang.com:80/public/resource/jquery/jquery-form.js"></script>
@@ -46,15 +26,22 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-
-    <title>快塑网-找塑料一网打尽</title>
+    <title>木料库-注册</title>
 
 
     <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <link href="http://www.isuwang.com:80/public/passport/assets/css/register.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
 
-    <script type="text/javascript" src="http://www.isuwang.com:80/public/passport/assets/js/login.js"></script>
-    <script type="text/javascript" src="http://www.isuwang.com:80/public/passport/assets/js/register.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/register.js"></script>
+    <script>
+		window.basePath  = "";
+        function init() {
+            if (location.href.indexOf("=") >= 0 && document.getElementById("redirectURL")) {
+                document.getElementById("redirectURL").value = decodeURIComponent(decodeURI(location.href.substr(location.href.indexOf("=") + 1)).replace(/\|/g, "&")).replace(/&/, "?");
+            }
+        }
+    </script>
 </head>
 <body onload="init()" style="font-family: '微软雅黑', 'Microsoft Yahei', sans-serif">
 
@@ -91,9 +78,7 @@
 
 </div>
 
-<input type="hidden" name="redirectURL" id="redirectURL"
-       value="#"/>
-
+<input type="hidden" name="ru" id="ru" value="#"/>
 <input type="hidden" id="yuandan" value=""/>
 
 <div class="fake-body register-page">
@@ -122,9 +107,10 @@
     <div class="form-wrap clearfix">
         <div id="detail-wrap">
 
-            <form class="reg-form" id="fromRegister" method="post" action="http://www.isuwang.com:80/passport/register.htm">
+            <form class="reg-form" id="fromRegister" method="post" action="/user/reg">
                 <input type="hidden" id="registerType" name="registerType" VALUE="PHONE"/>
-
+                <input type="hidden" id="openId" name="openId" value=""/>
+                <input type="hidden" id="type" name="type" value="" />
                 <div class="regInfo">
                     <div class="reg-form-row clearfix phone">
                         <label class="reg-form-label inline-block">手机号码：</label>
@@ -132,6 +118,7 @@
                                value=""/>
                         <label class="tips-wrap phone"></label>
                     </div>
+					<!--
                     <div class="reg-form-row clearfix membership">
                         <label class="reg-form-label inline-block"><span class="red-after">会员身份：</span><span
                                 class="red-star">*</span></label>
@@ -144,6 +131,7 @@
 
                         <label class="tips-wrap  membership"></label>
                     </div>
+                    -->
                     <div class="reg-form-row clearfix name">
                         <label class="reg-form-label inline-block"><span class="red-after">真实姓名：</span><span
                                 class="red-star">*</span> </label>
@@ -153,7 +141,7 @@
                     <div class="reg-form-row clearfix companyName">
                         <label class="reg-form-label inline-block"><span class="red-after">公司名称：</span><span
                                 class="red-star">*</span></label>
-                        <input class="reg-form-input" id="companyName" name="companyName"/>
+                        <input class="reg-form-input" id="company" name="company"/>
                         <label class="tips-wrap companyName"></label>
                     </div>
                     <div class="reg-form-row clearfix mainProducts">
@@ -183,21 +171,6 @@
                         <p class="reg-tips" style="display: none">已发送，验证码10分钟内有效，若未收到短信，可点击重新获取验证码</p>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <div class="reg-btn-wrap">
 
@@ -254,7 +227,7 @@
         <p class="small">我们将在 3个工作日内给您电话答复，感谢注册快塑网！</p>
 
         <p class="n-footer">
-            <a href="#" class="go-back" style="margin-left: 60px;">返回首页</a>
+            <a href="/" class="go-back" style="margin-left: 60px;">返回首页</a>
 
         </p>
         <i class="s-icon"></i>
