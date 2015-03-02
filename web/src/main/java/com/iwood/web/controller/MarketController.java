@@ -25,4 +25,10 @@ public class MarketController {
   public String index2() {
     return "/market/index";
   }
+
+  // Market post resource
+  @RequestMapping("/post")
+  public String post() {
+    return "/market/post";
+  }
 }
