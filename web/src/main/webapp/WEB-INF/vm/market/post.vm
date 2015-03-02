@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>木料库-找木料、更安全、更快捷、更便宜</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <!--<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>-->
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+  <!-- 自定义Web CSS文件 -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/market.css">
+</head>
+<body>
+
+## header
+  #include("template/header.vm")
+
+## main container
+  <div class="market-post-main">
+    <div class="left">
+      <form id="market-post" method="post">
+        <p class="title">
+          发布<span>木料资源</span>
+        </p>
+        <div class="all-wraps">
+          <div class="clearfix">
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                材质
+              </span>
+              <select class="input-item apply">
+                <option value>--未选择--</option>
+                <option value="1">交趾黄檀</option>
+                <option value="2">大果紫檀</option>
+                <option value="3">刺猬紫檀</option>
+                <option value="4">微凹黄檀</option>
+                <option value="5">阔叶黄檀</option>
+                <option value="6">非洲崖豆木</option>
+                <option value="7">铁刀木</option>
+              </select>
+            </div>
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                类型
+              </span>
+              <select class="input-item apply">
+                <option value>--未选择--</option>
+                <option value="goods">现货</option>
+              ##                <option value="futures">期货</option>
+              </select>
+            </div>
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                加工
+              </span>
+              <select class="input-item apply">
+                <option value>--未选择--</option>
+                <option value="1">原木</option>
+                <option value="2">半成品</option>
+                <option value="3">成品</option>
+              </select>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="items-wrap">
+              <span class="name">应用</span>
+              <input class="input-item" type="text" autocomplete="off">
+            </div>
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                价格
+              </span>
+              <input class="input-item" type="text" autocomplete="off">
+              <span class="unit">(元/吨)</span>
+            </div>
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                数量
+              </span>
+              <input class="input-item" type="text" autocomplete="off">
+              <span class="unit">吨</span>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                产地
+              </span>
+              <input class="input-item" type="text" autocomplete="off" placeholder="城市(国内)、国家(国外)">
+            </div>
+            <div class="items-wrap">
+              <span class="name">
+                <span class="red">*</span>
+                仓库
+              </span>
+              <input class="input-item" type="text" autocomplete="off" placeholder="填写城市">
+            </div>
+          </div>
+          <div class="items-wrap foot">
+            <input type="button" class="btn" value="马上发布">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+## footer
+  #include("template/footer.vm")
+</body>
+</html>
