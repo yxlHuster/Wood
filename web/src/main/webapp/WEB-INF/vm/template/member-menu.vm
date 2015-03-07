@@ -1,0 +1,65 @@
+<div class="member-menu">
+  <div class="menu-group-title">资源管理</div>
+  <ul class="menu-group">
+    <li class="menu-item">
+      <a href="/member/resources" class="item inline-block">
+        我的资源
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="/market/post" class="item inline-block">
+        发布资源
+      </a>
+    </li>
+  </ul>
+  <!--
+  <div class="menu-group-title">需求管理</div>
+  <ul class="menu-group">
+    <li class="menu-item">
+      <a href="/member/resources" class="item inline-block">
+        我的需求
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="/market/post" class="item inline-block">
+        发布需求
+      </a>
+    </li>
+  </ul>
+  -->
+  <div class="menu-group-title">我的信息</div>
+  <ul class="menu-group">
+    <li class="menu-item">
+      <a href="/member/info" class="item inline-block">
+        个人信息
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="/member/company" class="item inline-block">
+        公司信息
+      </a>
+    </li>
+    <!--
+    <li class="menu-item">
+      <a href="/member/info" class="item inline-block">
+        开票资料
+      </a>
+    </li>
+    -->
+  </ul>
+  <div class="menu-group-title">账户安全</div>
+  <ul class="menu-group">
+    <li class="menu-item">
+      <a href="/member/password" class="item inline-block">
+        修改密码
+      </a>
+    </li>
+    <!--
+    <li class="menu-item">
+      <a href="/member/password" class="item inline-block">
+        账户绑定
+      </a>
+    </li>
+    -->
+  </ul>
+</div>

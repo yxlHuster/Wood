@@ -37,6 +37,19 @@
           <div style="margin: 0 auto; padding: 0px;">
             <div class="search-form">
               <div class="search-form-row">
+                <div class="label">大类</div>
+                <div class="values">
+                  <ul class="value">
+                    <li><a>红木</a></li>
+                    <li><a>原木</a></li>
+                    <li><a>板材</a></li>
+                    <li><a>人造板</a></li>
+                    <li><a>地板</a></li>
+                    <li><a>木皮</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="search-form-row">
                 <div class="label">材质</div>
                 <div class="values">
                   <ul class="value">
@@ -94,46 +107,41 @@
             <div class="market-list-header">
               <div class="row clearfix">
                 <span class="item type">类型</span>
+                <span class="item name">品名</span>
                 <span class="item texture">材质</span>
                 <span class="item origin">产地</span>
                 <span class="item process">加工</span>
                 <span class="item specification">规格</span>
+                <span class="item level">等级</span>
                 <span class="item price">价格(元/吨)</span>
                 <span class="item amount">数量(吨)</span>
                 <span class="item store">仓库</span>
                 <span class="item apply">应用</span>
                 <span class="item time">更新时间</span>
                 <span class="item company">公司信息</span>
-                <span class="item operation">操作</span>
               </div>
             </div>
             <div class="market-list-main">
               <div class="row clearfix">
                 <span class="item type cash"></span>
+                <span class="item name">大红酸枝原木</span>
                 <span class="item texture">交趾黄檀</span>
                 <span class="item origin">老挝</span>
                 <span class="item process">原木</span>
-                <span class="item specification">直径10cm</span>
+                <span class="item specification">
+                  <span>直径</span>
+                  <span>10~25cm</span>
+                </span>
+                <span class="item level">AAA</span>
                 <span class="item price">100000</span>
                 <span class="item amount">100</span>
                 <span class="item store">东阳</span>
                 <span class="item apply">家具</span>
                 <span class="item time">刚刚</span>
-                <span class="item company">浙江东阳木材有限公司</span>
-                <span class="item operation"></span>
-              </div>
-              <div class="row clearfix">
-                <span class="item type cash"></span>
-                <span class="item texture">大果紫檀</span>
-                <span class="item origin">缅甸</span>
-                <span class="item process">原木</span>
-                <span class="item specification">直径8cm</span>
-                <span class="item price">60000</span>
-                <span class="item amount">80</span>
-                <span class="item store">仙游</span>
-                <span class="item apply">家具</span>
-                <span class="item time">刚刚</span>
-                <span class="item company">浙江东阳木材有限公司</span>
+                <span class="item company">
+                  <span class="company-name">浙江东阳木材有限公司</span><br/>
+                  <span class="title">唐先生</span><span>15201306364</span>
+                </span>
                 <span class="item operation"></span>
               </div>
             </div>

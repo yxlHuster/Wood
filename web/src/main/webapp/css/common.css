@@ -62,7 +62,7 @@
   margin: 0 5px;
 }
 
-.search-item a:hover {
+.search-item a:hover, .search-item a.current {
   color: #f70;
 }
 

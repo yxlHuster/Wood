@@ -1,0 +1,292 @@
+.member-body {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+.member-nav {
+  margin: 10px 0;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  color: #444;
+  border: 1px solid #fff;
+  text-indent: 0;
+}
+
+.member-nav .item {
+  text-indent: 0;
+  margin: 0 2px;
+  color: #3094ed;
+  text-decoration: none;
+}
+
+.member-main {
+  position: relative;
+}
+
+.member-main .member-menu {
+  width: 160px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #e3e3e3;
+  border-top: 0;
+}
+
+.member-main .member-page {
+  margin-left: 180px;
+  min-height: 630px;
+  overflow: visible;
+  margin-right: 0;
+}
+
+.member-main .member-menu .menu-group-title {
+  height: 30px;
+  line-height: 30px;
+  background: #f7f7f7;
+  color: #333;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  text-indent: 1em;
+}
+
+.member-main .member-menu .menu-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-group .menu-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-group .menu-item .item {
+  height: 30px;
+  line-height: 30px;
+  text-indent: 2em;
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-left: 20px;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+.menu-group .menu-item .fa{
+  text-indent: 0;
+  margin-right: 5px;
+}
+
+.profile-header {
+  height: 36px;
+  line-height: 36px;
+  border-bottom: solid 1px #3094ed;
+  color: #3094ed;
+  font-size: 18px;
+  font-weight: 700;
+  text-indent: 20px;
+}
+
+.profile-body {
+  margin: 10px auto;
+  width: 100%;
+  border: solid 1px #e3e3e3;
+}
+
+.profile-body-header {
+  height: 36px;
+  line-height: 36px;
+  background: #edf6ff;
+  border-bottom: solid 1px #e3e3e3;
+  color: #3094ed;
+  font-size: 18px;
+  text-indent: 20px;
+}
+
+.profile-info {
+  margin: 18px 0px;
+  overflow: hidden;
+  color: #666666;
+  height: 28px;
+  line-height: 28px;
+}
+
+.profile-info .item {
+  display: inline-block;
+  text-align: right;
+  width: 15%;
+  float: left;
+  font-size: 16px;
+}
+
+.profile-info .text {
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+  float: left;
+  font-size: 16px;
+}
+
+.profile-body .first {
+  margin-top: 10px;
+}
+
+.profile-body .password-item {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  font-size: 16px;
+  height: 32px;
+  line-height: 32px;
+  margin: 4px 0;
+}
+
+.profile-body .password-input {
+  height: 30px;
+  font-size: 16px;
+}
+
+.profile-body .password-save {
+  display: inline-block;
+  margin: 10px 10px 10px 104px;
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+  background: #3094ed;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  font-size: 16px;
+}
+
+.profile-body .market-list {
+  border: solid 1px #e3e3e3;
+  border-top: 0;
+}
+
+.profile-body .market-list .market-list-header {
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 12px;
+  border-bottom: solid 1px #e3e3e3;
+}
+
+.profile-body .market-list .item {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+
+.profile-body .market-list .market-list-main .item {
+  height: 60px;
+  line-height: 60px;
+}
+
+.profile-body .market-list .type {
+  width: 60px;
+}
+
+.profile-body .market-list .name {
+  width: 120px;
+}
+
+.profile-body .market-list .texture {
+  width: 70px;
+}
+
+.profile-body .market-list .origin {
+  width: 60px;
+}
+
+.profile-body .market-list .process {
+  width: 60px;
+}
+
+.profile-body .market-list .specification {
+  width: 80px;
+}
+
+.profile-body .market-list .market-list-main .specification {
+  width: 80px;
+  line-height: 22px;
+  margin-top: 8px;
+  height: 52px;
+}
+
+.profile-body .market-list .level {
+  width: 70px;
+}
+
+.profile-body .market-list .market-list-main .level {
+  color: #3094ed;
+  font-weight: 800;
+}
+
+.profile-body .market-list .price {
+  width: 100px;
+}
+
+.profile-body .market-list .amount {
+  width: 70px;
+}
+
+.profile-body .market-list .store {
+  width: 90px;
+}
+
+.profile-body .market-list .apply {
+  width: 90px;
+}
+
+.profile-body .market-list .time {
+  width: 90px;
+}
+
+.profile-body .market-list .company {
+  width: 218px;
+}
+
+.profile-body .market-list .market-list-main .company {
+  line-height: 22px;
+  margin-top: 8px;
+  height: 52px;
+}
+
+.profile-body .market-list .market-list-main .company .company-name {
+  color: #ffb200;
+}
+
+.profile-body .market-list .market-list-main .company .title {
+  margin-right: 30px;
+}
+
+.profile-body .market-list .operation {
+  width: 48px;
+}
+
+.profile-body .market-list .operation a {
+  color: #ff7800;
+}
+
+.profile-body .market-list .market-list-main .cash {
+  background: url("../images/mar-up.png") -39px -19px no-repeat;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
