@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>木料库-找木料、更安全、更快捷、更便宜</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <!--<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>-->
+
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <!--<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+  <!-- 自定义Web CSS文件 -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/member.css">
+</head>
+<body>
+
+## header
+  #include("template/header.vm")
+
+## main container
+<div class="main">
+  <div class="member-body">
+    <div class="member-nav">
+      您当前的位置：
+      <a class="item" href="/">木料库首页</a>
+      <span class="item"> >></span>
+      <span class="item">会员中心</span>
+      <span class="item"> >></span>
+      <span class="item">我的资源</span>
+    </div>
+    <div class="member-main">
+    ## member menu
+      #include("template/member-menu.vm")
+
+      <div class="member-page">
+        <div class="profile-main">
+          <div class="profile-header">
+            <span class="profile-header-title">我的资源</span>
+          </div>
+          <div class="profile-body">
+            <div class="market-list">
+              <div class="market-list-header">
+                <div class="row clearfix">
+                  <span class="item type">类型</span>
+                  <span class="item name">品名</span>
+                  <span class="item texture">材质</span>
+                  <span class="item origin">产地</span>
+                  <span class="item process">加工</span>
+                  <span class="item specification">规格</span>
+                  <span class="item level">等级</span>
+                  <span class="item price">价格(元/吨)</span>
+                  <span class="item amount">数量(吨)</span>
+                  <span class="item store">仓库</span>
+                  <span class="item apply">应用</span>
+                  <span class="item time">更新时间</span>
+                  <span class="item operation">操作</span>
+                </div>
+              </div>
+              <div class="market-list-main">
+                <div class="row clearfix">
+                  <span class="item type cash"></span>
+                  <span class="item name">大红酸枝原木</span>
+                  <span class="item texture">交趾黄檀</span>
+                  <span class="item origin">老挝</span>
+                  <span class="item process">原木</span>
+                  <span class="item specification">
+                    <span>直径</span>
+                    <span>10~25cm</span>
+                  </span>
+                  <span class="item level">AAA</span>
+                  <span class="item price">100000</span>
+                  <span class="item amount">100</span>
+                  <span class="item store">东阳</span>
+                  <span class="item apply">家具</span>
+                  <span class="item time">刚刚</span>
+                  <span class="item operation"><a href="#">删除</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## footer
+  #include("template/footer.vm")
+</body>
+</html>

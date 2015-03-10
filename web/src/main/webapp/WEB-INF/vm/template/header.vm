@@ -16,13 +16,15 @@
       </div>
       <ul class="fr clearfix">
         <li class="hd_menu">
-          <a class="hd_menu_title" href="">我的木料库</a>
+          <a class="hd_menu_title" href="/member/info">我的木料库</a>
         </li>
+        <!--
         <li class="hd_menu">
           <a class="hd_menu_title" href="">我的订单</a>
         </li>
+        -->
         <li class="hd_menu">
-          <a class="hd_menu_title" href="">我是供应商</a>
+          <a class="hd_menu_title" href="/member/info">我是供应商</a>
         </li>
       </ul>
     </div>
@@ -36,7 +38,7 @@
       </div>
       <div class="fl search-bar">
         <div class="search-item">
-          <a href="javascript:void(0)">产品</a>
+          <a class="current" href="javascript:void(0)">资源</a>
           <i class="line_s"></i>
           <a href="javascript:void(0)">求购</a>
         </div>
