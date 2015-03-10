@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -47,6 +48,13 @@ public class AbstractController {
 		return new ModelAndView(view, model);
 	}
 
+	protected Map<String, Object> getModel(HttpServletRequest request) {
+		Map<String, Object> model = new HashMap<String, Object>();
+		AuthedUser user = getLoginUser(request);
+		model.put("_user", user);
+		return model;
+	}
+
 	protected AuthedUser getLoginUser(HttpServletRequest request) {
 		return (AuthedUser) request.getAttribute(AuthFilter.LOGIN_USER_ATTR);
 	}
@@ -59,5 +67,7 @@ public class AbstractController {
 		}
 		return null;
 	}
+
+
 
 }

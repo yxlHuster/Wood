@@ -49,6 +49,7 @@ public class PassPortController extends AbstractController {
 						@RequestParam(value = "password", required = true) String password,
 						@RequestParam(value = "rePassword", required = true) String rePassword,
 						@RequestParam(value = "validCode", required = true) String validCode) {
+		LOGGER.warn("phone={},name={},company={},mainProducts={},flag={},password={},rePasword={},validCode={}",phone,name,company,mainProducts,flag,password,rePassword,validCode);
 		JSONObject object = new JSONObject();
 		if (regStep == 1) {
 			//check phone number exists
@@ -61,7 +62,12 @@ public class PassPortController extends AbstractController {
 			this.sendJsonResponse(response, object);
 
 		} else if (regStep == 2) {
-	   		object.put("msg", "succ");
+			boolean succ = userService.addUser(phone, name, company, mainProducts, password);
+			if (succ) {
+	   			object.put("msg", "succ");
+			} else {
+				object.put("msg", "fail");
+			}
 			this.sendJsonResponse(response, object);
 		}
 	}

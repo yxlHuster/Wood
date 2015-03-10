@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iwood.data.mapper.ProductMapper">
+
+    <resultMap id="prResultMap" type="product">
+        <result column="id" property="id" />
+        <result column="pstat" property="pstat" />
+        <result column="pname" property="pname"/>
+        <result column="material" property="material"/>
+        <result column="origin" property="origin"/>
+        <result column="process" property="process"/>
+        <result column="specifications" property="specifications"/>
+        <result column="plevel" property="plevel"/>
+        <result column="price" property="price"/>
+        <result column="amount" property="amount"/>
+        <result column="storehouse" property="storehouse"/>
+        <result column="application" property="application"/>
+        <result column="created" property="created"/>
+        <result column="modified" property="modified"/>
+        <result column="company" property="company"/>
+        <result column="thumbnail" property="thumbnail"/>
+        <result column="imgs" property="imgs"/>
+        <result column="uid" property="uid"/>
+        <result column="rtype" property="rtype"/>
+    </resultMap>
+
+    <insert id="addProduct" parameterType="product">
+        INSERT INTO
+        wood_product(pstat, pname, material, origin, process, specifications, plevel, price, amount, storehouse, application, created, modified, company, thumbnail, imgs, uid, rtype)
+        VALUES(#{pstat}, #{pname}, #{material}, #{origin}, #{process}, #{specifications}, #{plevel}, #{price}, #{amount}, #{storehouse}, #{application}, now(), now(), #{company}, #{thumbnail}, #{imgs}, #{uid}, #{rtype})
+    </insert>
+
+    <select id="getLastestProducts" parameterType="Map" resultMap="prResultMap">
+      SELECT pstat, pname, material, origin, process, specifications, plevel, price, amount, storehouse, application, created, modified, company, thumbnail, imgs, uid, rtype
+      FROM wood_product
+      ORDER BY modified DESC
+      LIMIT #{startPos}, #{offset}
+    </select>
+
+    <select id="getLastestProductsByPrice" parameterType="Map"  resultMap="prResultMap">
+      SELECT pstat, pname, material, origin, process, specifications, plevel, price, amount, storehouse, application, created, modified, company, thumbnail, imgs, uid, rtype
+      FROM wood_product
+      ORDER BY price DESC,modified DESC
+      LIMIT #{startPos}, #{offset}
+    </select>
+
+    <select id="getLastestProductsByAmount" parameterType="Map" resultMap="prResultMap">
+      SELECT pstat, pname, material, origin, process, specifications, plevel, price, amount, storehouse, application, created, modified, company, thumbnail, imgs, uid, rtype
+      FROM wood_product
+      ORDER BY amount DESC,modified DESC
+      LIMIT #{startPos}, #{offset}
+    </select>
+
+
+    <select id="getProductsByUid" parameterType="Map" resultMap="prResultMap">
+      SELECT pstat, pname, material, origin, process, specifications, plevel, price, amount, storehouse, application, created, modified, company, thumbnail, imgs, uid, rtype
+      FROM wood_product
+      WHERE uid = #{uid}
+      ORDER BY modified DESC
+      LIMIT #{startPos}, #{offset}
+    </select>
+
+    <update id="updateProduct" parameterType="user">
+      UPDATE wood_product
+      SET pstat = #{pstat},
+      pname = #{pname},
+      material = #{material},
+      origin = #{origin},
+      process = #{process},
+      specifications = #{specifications},
+      plevel = #{plevel},
+      price = #{price},
+      amount = #{amount},
+      storehouse = #{storehouse},
+      application = #{application},
+      modified = #{modified},
+      company = #{company},
+      thumbnail = #{thumbnail},
+      imgs = #{imgs},
+      rtype = #{rtype}
+      WHERE id = #{id}
+    </update>
+
+</mapper>

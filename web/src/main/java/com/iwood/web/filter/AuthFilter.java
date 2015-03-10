@@ -2,6 +2,7 @@ package com.iwood.web.filter;
 
 import com.iwood.web.model.AuthedUser;
 import com.iwood.web.util.CookieUtils;
+import org.springframework.stereotype.Repository;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +16,7 @@ import java.io.IOException;
  * Time: 上午11:27
  * To change this template use File | Settings | File Templates.
  */
+@Repository
 public class AuthFilter implements Filter {
 
 	public static final String LOGIN_USER_ATTR = "loginUser";

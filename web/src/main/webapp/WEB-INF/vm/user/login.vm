@@ -89,6 +89,9 @@
                     <input type="password" id="passwd" name="passwd" class="text" placeholder="请输入密码"
                            value=""/>
 
+					 #if($errmsg)
+						 <p>$errmsg</p>
+					 #end
 
                     <div class="regs-wrap">
                         <div class="links-wrap">

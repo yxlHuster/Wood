@@ -17,6 +17,7 @@
 
     <typeAliases>
         <typeAlias type="com.iwood.data.model.User" alias="user"/>
+        <typeAlias type="com.iwood.data.model.Product" alias="product"/>
     </typeAliases>
 
 </configuration>

@@ -19,7 +19,7 @@
 <body>
 
 ## header
-  #include("template/header.vm")
+  #parse("/template/header.vm")
 
 ## main container
   <div class="market-post-main">
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div class="items-wrap foot">
-            <input type="button" class="btn" value="马上发布">
+            <input type="button" class="btn" onclick="formSubmit();" value="马上发布">
           </div>
         </div>
       </form>
@@ -119,4 +119,10 @@
 ## footer
   #include("template/footer.vm")
 </body>
+
+<script>
+	function formSubmit() {
+
+	}
+</script>
 </html>

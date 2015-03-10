@@ -12,8 +12,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -24,41 +28,43 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends AbstractController {
 
 	@Autowired
 	private UserService userService;
 
     @RequestMapping(value =  "/login", method = RequestMethod.GET)
-    public String index(HttpServletRequest request, HttpServletResponse response) {
-        return "/user/login";
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
+        return modelAndView("/user/login");
     }
 
     @RequestMapping(value = "/ulogin", method = RequestMethod.POST)
-    public String userLogin(Model model,
-                            HttpServletRequest request, HttpServletResponse response,
+    public ModelAndView userLogin(HttpServletRequest request, HttpServletResponse response,
 							@RequestParam(value = "ru", required = false) String ru,
                             @RequestParam(value = "phone") String phone,
                             @RequestParam(value = "passwd") String password) {
+		Map<String, Object> objects = new HashMap<String, Object>();
 		User user = userService.getUserByPhoneAndPassWd(phone, password);
 		if (user == null) {
-			model.addAttribute("errmsg", "用户名或者密码错误！");
-			return "/user/login";
+			objects.put("errmsg", "用户名或者密码错误！");
+			return modelAndView("/user/login", objects);
 		}
 		AuthedUser authedUser = new AuthedUser();
-		authedUser.setName(user.getPhone());
+		authedUser.setName(user.getRealName());
 		authedUser.setId(user.getUserId());
+		authedUser.setTime(System.currentTimeMillis());
 		CookieUtils.setLoginCookie(response, authedUser);
+		objects.put("_user", authedUser);
 		if (StringUtils.isNotBlank(ru) && !ru.equals("#")) {
-			 return "redirect:" + ru;
+			 return this.redirect(response, ru);
 		}
-		return "/home/index";
+		return modelAndView("/home/index", objects);
     }
 
-    @RequestMapping(value = "/loginout")
+    @RequestMapping(value = "/logout")
     public String loginOut(HttpServletRequest request, HttpServletResponse response) {
 		CookieUtils.removeLoginCookie(response);
-        return "redirect:/home/index";
+        return "redirect:/";
     }
 
 	@RequestMapping(value = "/reg")

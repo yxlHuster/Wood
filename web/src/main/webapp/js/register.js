@@ -340,7 +340,7 @@
                     $(".reg-form-row.membership").show();
                     $(".reg-form-row.name").show();
                     $(".reg-form-row.companyName").show();
-                    $(".reg-form-row.mainProducts").hide();
+                    $(".reg-form-row.mainProducts").show();
                     $(".reg-form-row.password").show();
                     $(".reg-form-row.rePassword").show();
                     $("#butRegister").text("完成注册");
@@ -357,21 +357,7 @@
                     $(".reg-process-wrap.wrap1").hide();
                     $(".reg-process-wrap.wrap2").hide();
                     $(".form-wrap").hide();
-                    $.ajax({
-                        url: basePath + "/luckyactivity/doingLuckyActivity.htm?activityId=REGISTER_DYQ_3_20&ra=" + Math.random(),
-                        dataType: "json",
-                        success: function(data, textStatus, jqXHR) {
-                            if (data != null && data.length > 0 && data[0] == true) {
-                                $(".notice-result-3").show()
-                            } else {
-                                $(".notice-result").show()
-                            }
-                        },
-                        error: function(XMLHttpRequest, textStatus, errorThrown) {
-                            console.log(textStatus);
-                            $(".notice-result").show()
-                        }
-                    })
+                    $(".notice-result").show();
                 }
             }
         },
