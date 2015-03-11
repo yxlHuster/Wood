@@ -23,7 +23,7 @@ public class MarketController extends AbstractController {
   @RequestMapping("/")
   public ModelAndView index(HttpServletRequest request) {
 	  	Map<String, Object> objects = getModel(request);
-  		return modelAndView("/market/index");
+  		return modelAndView("/market/index", objects);
   }
 
   // Market post resource

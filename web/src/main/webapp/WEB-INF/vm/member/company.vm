@@ -19,7 +19,7 @@
 <body>
 
 ## header
-  #include("template/header.vm")
+  #parse("/template/header.vm")
 
 ## main container
 <div class="main">

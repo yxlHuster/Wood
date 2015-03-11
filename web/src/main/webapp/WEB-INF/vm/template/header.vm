@@ -65,8 +65,8 @@
       <ul>
         <li><a href="/" class=""><b>首页</b></a></li>
         <!-- <li><a href="#"><b>木料仓库</b></a></li> -->
-        <li><a href="/market"><b>木料市场</b></a></li>
-        <li><a href="/purchase"><b>采购报价区</b></a></li>
+        <li><a href="/market/"><b>木料市场</b></a></li>
+        <li><a href="/purchase/"><b>采购报价区</b></a></li>
       </ul>
     </nav>
   </div>
