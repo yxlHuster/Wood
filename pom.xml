@@ -43,13 +43,7 @@
 
 
   <dependencyManagement>
-    <dependencies>
-
-      <dependency>
-        <groupId>com.sohu.adrd</groupId>
-        <artifactId>data</artifactId>
-        <version>${project.version}</version>
-      </dependency>
+    <dependencies>s
 
       <dependency>
         <groupId>org.springframework</groupId>
